@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.container {
+  width: 300px;
+  border: 5px solid #f3eef3;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header--icons {
+  height: 25px;
+}
+
+.profile--picture {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  height: 400px;
+}
+
+.info {
+  position: absolute;
+  color: white;
+  left: 10px;
+  bottom: 10px;
+}
+
+.profile--status {
+  margin-top: 5px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.btn--div {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background-color: hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 1px 1px 5px #bcbcbc;
+  border-radius: 50%;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn--cross {
+  background-image: url("images/icon-cross.png");
+  margin-right: 15px;
+}
+
+.btn--heart {
+  margin-left: 15px;
+  background-image: url("images/icon-heart.png");
+}
+
+.btn--cross:hover {
+  background-color: #ffe7ef;
+  box-shadow: 0px 10px 20px #edd9df;
+}
+
+.btn--heart:hover {
+  background-color: #dbfff4;
+  box-shadow: 0px 10px 20px #ccf1e6;
+}
+
+.badge {
+  width: 50%;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  transform: rotate(-30deg) translate(-20px);
+}
+
+.noped,
+.liked {
+  display: none;
+}
+
+.endmsg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #27dfae;
+  text-align: center;
+}
